@@ -1,0 +1,25 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.signup{
+    background-color: blue;
+    color: aliceblue;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+
+}
+.signup input{
+background-color: aquamarine;
+}
+.login{
+    background-color: rgb(14, 14, 92);
+    color: aliceblue;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+.login input{
+    background-color: aquamarine;
+}

@@ -49,12 +49,17 @@ function login(e) {
     var loginPassword = document.querySelector('#loginPassword').value;
 
     var getUsers = JSON.parse(localStorage.getItem('users'));
-   
-    var userIndex = getUsers.findIndex(function (value) {
-        if (value.email === loginEmail && value.password === loginPassword) return true
+    console.log(getUsers)
+    if (getUsers === null) {
+        alert('your email is not exist')
+        location.href = './signup.html'
+    }
+    var userIndex = getUsers.find(function (i) {
+
+        if (i.email === loginEmail && i.password === loginPassword) return true
 
     })
-    if (userIndex !== -1) {
+    if (userIndex !== undefined) {
         console.log('succsess fully login');
         alert('succsess fully login')
         window.location.replace('./facebook.html')
@@ -62,7 +67,6 @@ function login(e) {
         console.log('your email is not exist ');
         alert('your email is not exist')
     }
-    
 
 }
 

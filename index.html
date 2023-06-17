@@ -9,20 +9,22 @@
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 <body class="body">
-    <section class="container mt-5">
-    <form onsubmit="login(event)">
+    <section class="container mt-5 sec">
+      <div class="signup">
+    <form onsubmit="login(event)" >
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" required class="form-control" id="loginEmail" aria-describedby="emailHelp">
+          <input type="email" required  class="form-control" id="loginEmail" aria-describedby="emailHelp">
         </div>
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="password" required class="form-control" id="loginPassword">
+          <input type="password" required  class="form-control" id="loginPassword">
         </div>
         <p class="para">Don't have an Account <a href="./signup.html">SignUp</a></p>
        
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
+    </div>
       </section>
 
 <script src="./app.js"></script>
