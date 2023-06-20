@@ -85,10 +85,10 @@ function login(e) {
 
     var getUsers = JSON.parse(localStorage.getItem('users'));
     console.log(getUsers)
-    // if (getUsers === null) {
-    //     alert('your email is not exist')
-    //     location.href = './signup.html'
-    // }
+    if (getUsers === null) {
+        alert('your email is not exist')
+        location.href = './signup.html'
+    }
     var userIndex = getUsers.find(function (i) {
 
         if (i.email === loginEmail && i.password === loginPassword) return true
